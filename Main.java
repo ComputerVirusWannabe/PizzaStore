@@ -2,7 +2,7 @@ class Main {
 	public static void main(String[] args) {
 	    PizzaFactory factory = new PizzaFactory();
 	    PizzaStore store = new PizzaStore(factory);
-        store.order("bwretyuess");
+        store.order("bones");
 	}
 }
 
