@@ -42,22 +42,21 @@ class ChickenPizza extends Pizza {
 
 class PizzaFactory {
     public Pizza makePizza(String pizzaName) {
+        Pizza pizza = null;
         if(pizzaName == "vegie") {
-            VegiePizza vegie = new VegiePizza();
+            pizza = new VegiePizza();
             System.out.println("Pizza for the vegans...");
-            return vegie;
         } else if (pizzaName == "beef") {
-            BeefPizza beef = new BeefPizza();
+            pizza = new BeefPizza();
             System.out.println("Beef pizza comin' right up...");
-            return beef;
         } else if (pizzaName == "chicken"){
-            ChickenPizza chicken = new ChickenPizza();
+            pizza = new ChickenPizza();
             System.out.println("Here comes the chicken pizza");
-            return chicken;
         } else {
             System.out.println("We don't serve such pizzas here valued customer..");
-            return null;
+            //return null;
         }
+        return pizza;
     }
 }
 
