@@ -1,7 +1,6 @@
 class Main {
 	public static void main(String[] args) {
-	    PizzaFactory factory = new PizzaFactory();
-	    PizzaStore store = new PizzaStore(factory);
+	    PizzaStore store = new PizzaStore(new PizzaFactory());
         store.order("rety");
 	}
 }
